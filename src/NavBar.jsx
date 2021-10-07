@@ -1,6 +1,9 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { NavLink } from 'react-router-dom'
 const NavBar = () => {
+  useEffect(() => {
+    document.title = 'Navbar-eCommerce'
+  }, [])
   return (
     <nav className='navbar navbar-expand-lg navbar-dark bg-dark navbar-style'>
       <a className='navbar-brand' href='/#'>
