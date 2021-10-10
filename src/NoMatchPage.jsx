@@ -1,10 +1,7 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 
-const NoMatchPage = () => {
-  useEffect(() => {
-    document.title = 'Not found-eCommerce'
-  }, [])
-  return <div></div>
+function NoMatchPage() {
+  return <h1 className='text-danger'>Page not found</h1>
 }
 
 export default NoMatchPage

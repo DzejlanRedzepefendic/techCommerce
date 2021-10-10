@@ -1,9 +1,7 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 import { NavLink } from 'react-router-dom'
-const NavBar = () => {
-  useEffect(() => {
-    document.title = 'Navbar-eCommerce'
-  }, [])
+
+let NavBar = () => {
   return (
     <nav className='navbar navbar-expand-lg navbar-dark bg-dark navbar-style'>
       <a className='navbar-brand' href='/#'>
@@ -54,7 +52,7 @@ const NavBar = () => {
         </ul>
 
         {/* right box starts */}
-        <div style={{ marginLeft: `70%` }}>
+        <div style={{ marginRight: 100 }}>
           <ul className='navbar-nav'>
             <li className='nav-item dropdown'>
               <a
@@ -66,7 +64,7 @@ const NavBar = () => {
                 aria-haspopup='true'
                 aria-expanded='false'
               >
-                <i className='fa fa-user-circle'></i>User
+                <i className='fa fa-user-circle'></i> User
               </a>
               <div className='dropdown-menu' aria-labelledby='navbarDropdown'>
                 <a className='dropdown-item' href='/#'>
@@ -81,4 +79,5 @@ const NavBar = () => {
     </nav>
   )
 }
+
 export default NavBar
